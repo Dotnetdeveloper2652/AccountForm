@@ -150,7 +150,7 @@ namespace BankAccountForm.Controllers
             var ageInY = string.Format("{0} years", age.Year);
             return age.Year;
         }
-
+           //Get all City according StateCode
         public JsonResult GetCityList(string StateCode)
         {
             List<City> selectList = _context.Cities.Where(x => x.City_Stat_Code == StateCode).ToList();
